@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,600);
+/*Some necessary adjustments*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px
+}
+
+header {
+	position: relative;
+	background-image: url(/images/soup.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 620px;
+}
+
+#heading {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: white;
+	font-size: 5vw;
+	transform: translate(-50%, -50%);
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+main {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.center {
+	text-align: center;
+}
+
+p {
+	font-size: 1.5vw;
+	margin: 40px 0 20px 0;
+
+}
+
+img {
+	display: inline-block;
+}
+
+.img {
+	display: inline-block;
+	margin: 20px 0 10px 0;
+}
+
+.title {
+	font-size: 1.5vw;
+	margin: 40px 0;
+	text-align: left;
+	font-weight: 600;
+}
+
+ul {
+	list-style: none;
+	text-align: left;
+  margin-left: 15px;
+}
+
+li {
+  font-size: 1.3vw;
+}
+
+ol {
+  /* counter-reset: list; */
+  font-size: 1.3vw;
+  margin-left: 15px;
+  padding-left: 25px;
+  margin-bottom: 75px
+}
+
+/* ol > li {
+  list-style: none;
+}
+
+ol > li:before {
+  content: counter(list) ") ";
+  counter-increment: list;
+} */
+
+/**** Media Queries ****/
+@media screen and (max-width: 768px) {
+  .title {
+      font-size: .8em; 
+  }
+  #heading {
+      font-size: 2.8em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .img {
+      width: 400px;
+      height: 80px;
+  }
+}
